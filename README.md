@@ -1,7 +1,10 @@
 # 大数据平台各组件官网配置与踩坑
  
 ## Hadoop
-
+- 官网：http://hadoop.apache.org/
+- 教程：https://zhuanlan.zhihu.com/p/57826002
+        https://zhuanlan.zhihu.com/p/77938727
+        https://zhuanlan.zhihu.com/p/25472769
 ## Spark
 
 ## Hbase
