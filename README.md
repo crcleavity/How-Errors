@@ -8,6 +8,8 @@
 
 ## Zookeeper
 
+- 官网：https://zookeeper.apache.org/
+- 教程：https://zhuanlan.zhihu.com/p/30024403
 ## Hive
 
 - 官网：https://hive.apache.org/
