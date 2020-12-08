@@ -7,7 +7,7 @@ class FiveJobSpider(scrapy.Spider):
     name = "51job"
     allowed_domains = ["m.51job.com"]
     current_page = 1
-    max_page = 1
+    max_page = 100
     # 上海PHP
     start_urls = [
         "https://m.51job.com/search/joblist.php?jobarea=020000&keyword=PHP&pageno=1",
@@ -35,10 +35,10 @@ class FiveJobSpider(scrapy.Spider):
         for url in items:
             yield  Request(url,callback=self.parse_item)
 
-        # if self.current_page < self.max_page:
-        #     self.current_page += 1
-        #     nex_page = 'https://m.51job.com/search/joblist.php?jobarea=020000&keyword=PHP&pageno='+str(self.current_page)
-        #     yield Request(nex_page,callback=self.parse)
+        if self.current_page < self.max_page:
+            self.current_page += 1
+            nex_page = 'https://m.51job.com/search/joblist.php?jobarea=020000&keyword=PHP&pageno='+str(self.current_page)
+            yield Request(nex_page,callback=self.parse)
     def parse_item(self,response):
         item =  TutorialItem()
         item['address'] = response.xpath("/html/body/div[1]/div[2]/div[1]/a/span/text()").extract()
