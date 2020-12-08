@@ -1,8 +1,10 @@
 # 大数据平台各组件官网配置与踩坑
  
+## JDK
+- 官网：https://www.oracle.com/java/technologies/javase-downloads.html
 ## Hadoop
 - 官网：http://hadoop.apache.org/
-- 教程：https://zhuanlan.zhihu.com/p/57826002
+- 教程：单机安装参考该教程即可 https://zhuanlan.zhihu.com/p/57826002
         https://zhuanlan.zhihu.com/p/77938727
         https://zhuanlan.zhihu.com/p/25472769
 ## Spark
